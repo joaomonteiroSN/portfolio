@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --fundo: #1e2d2f;
+    /* verde escuro */
+    --destaque: #c2b280;
+    /* bege dourado */
+    --texto: #e0e0e0;
+    /* cinza claro */
+    --azul-zelda: #5ea3a3;
+    /* azul suave inspirado em Breath of the Wild */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Blinker", sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--fundo);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--azul-zelda);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--destaque);
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--destaque);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--texto);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--azul-zelda);
+    color: var(--fundo);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#foto {
+    border-radius: 50%;
+    height: 200px;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #141e1f;
+    color: var(--texto);
+}

@@ -36,6 +36,19 @@ header {
     z-index: 10;
 }
 
+#logo-section {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 4rem;
+}
+
+#logo-portfolio {
+    border-radius: 10%;
+    height: 200px;
+    max-width: 100%;
+}
+
 nav a {
     margin-left: 1.5rem;
     text-decoration: none;

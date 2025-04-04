@@ -24,6 +24,10 @@ body {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: 2.3rem;
+}
+
 header {
     background-color: var(--fundo);
     padding: 1rem 2rem;
@@ -40,19 +44,24 @@ header {
     display: flex;
     gap: 3rem;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #logo-portfolio {
     border-radius: 10%;
-    height: 200px;
     max-width: 100%;
+    max-height: 150px;
 }
 
 nav a {
     margin-left: 1.5rem;
     text-decoration: none;
     color: var(--destaque);
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    font-weight: bold;
 }
 
 section {
@@ -89,10 +98,30 @@ section {
     font-weight: bold;
 }
 
+.btn:hover {
+    background-color: var(--destaque);
+}
+
+#sobre-conteiner {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin:  2rem 0;
+}
+
+#sobre-conteiner p {
+    font-size: 1.2rem;
+}
+
 #foto {
     border-radius: 50%;
     height: 200px;
     max-width: 100%;
+}
+
+#formacao h4{
+    color: var(--destaque);
+    font-size: 1.5rem;
 }
 
 footer {
@@ -100,4 +129,19 @@ footer {
     padding: 2rem;
     background-color: #141e1f;
     color: var(--texto);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre {
+        text-align: center;
+    }
+
+    #sobre-conteiner {
+        flex-direction: column;
+    }
 }
